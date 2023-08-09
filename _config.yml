@@ -18,18 +18,18 @@ timezone: America/Los_Angeles
 # jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 # ↓ --------------------------
 
-title: Starter # the main title
+title: Ascii Games # the main title
 
-tagline: A text-focused Jekyll theme # it will display as the sub-title
+tagline: open source ascii games # it will display as the sub-title
 
 description: >- # used by seo meta and the atom feed
-  A minimal, responsive and feature-rich Jekyll theme for technical writing.
+  Precompiled and packaged open source character based Ascii games.
 
 # fill in the protocol & hostname for your site, e.g., 'https://username.github.io'
 url: ""
 
 github:
-  username: doctorfree # change to your github username
+  username: doctorfree/asciigames # change to your github username
 
 twitter:
   username: ronrecord # change to your twitter username
@@ -89,23 +89,25 @@ comments:
     issue_term: # < url | pathname | title | ...>
   # Giscus options › https://giscus.app
   giscus:
-    repo: # <gh-username>/<repo-name>
-    repo_id: # The repository node id, find it with "gh api repos/${repo} | jq '.node_id'"
-    category: # The repo discussion category for comments, e.g. General
-    category_id: # This is the hardest thing to find. Use the following script:
-                 # gh api graphql -f query='
-                 # {
-                 #   repository(owner: "<gh-username>", name: "<repo-name>") {
-                 #     id
-                 #     name
-                 #     discussionCategories(first: 10) {
-                 #       nodes {
-                 #         id
-                 #         name
-                 #       }
-                 #     }
-                 #   }
-                 # }'
+    repo: doctorfree/asciigames.neoman.dev
+    repo_id: R_kgDOKFAAeA # The repository node id, find it with "gh api repos/${repo} | jq '.node_id'"
+    category: General # The repo discussion category for comments, e.g. General
+    category_id:
+      DIC_kwDOKFAAeM4CYd5P
+      # This is the hardest thing to find. Use the following script:
+      # gh api graphql -f query='
+      # {
+      #   repository(owner: "<gh-username>", name: "<repo-name>") {
+      #     id
+      #     name
+      #     discussionCategories(first: 10) {
+      #       nodes {
+      #         id
+      #         name
+      #       }
+      #     }
+      #   }
+      # }'
     mapping: # optional, default to 'pathname'
     input_position: # optional, default to 'bottom'
     lang: # optional, default to the value of `site.lang`
