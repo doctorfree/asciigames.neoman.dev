@@ -4,6 +4,167 @@ toc: true
 post_style: page
 ---
 
+<h1 id="ascii-games">Ascii Games</h1>
+<p>
+  The <code>asciigames</code> project provides several precompiled and
+  prepackaged open source character based Ascii games. These can be installed as
+  standalone packages on Linux and macOS or installed via the
+  <a href="https://github.com/doctorfree/Asciiville#readme"
+    >Asciiville project</a
+  >
+  initialization process.
+</p>
+<p>Games currently included in this project:</p>
+<ul>
+  <li>
+    <a href="https://github.com/mevdschee/2048.c">2048</a>, Console version of
+    the game “2048”
+  </li>
+  <li>
+    <a href="https://en.wikipedia.org/wiki/NetHack">Nethack</a>, ASCII text
+    dungeon game
+  </li>
+  <li>
+    <a href="https://en.wikipedia.org/wiki/Space_Invaders">Ninvaders</a>, ASCII
+    text version of Space Invaders
+  </li>
+  <li>
+    <a href="https://en.wikipedia.org/wiki/Tetris">Tetris</a>, ASCII text
+    version of Tetris
+  </li>
+</ul>
+<h2 id="table-of-contents">Table of Contents</h2>
+<ol type="1">
+  <li><a href="#requirements">Requirements</a></li>
+  <li><a href="#installation">Installation</a></li>
+  <li><a href="#removal">Removal</a></li>
+  <li>
+    <a href="#building-asciigames-from-source"
+      >Building asciigames from source</a
+    >
+  </li>
+  <li><a href="#contributing">Contributing</a></li>
+</ol>
+<h2 id="requirements">Requirements</h2>
+<p>Asciigames is compiled and packaged for installation on:</p>
+<ul>
+  <li>Arch Linux (x86_64)</li>
+  <li>Fedora Linux (x86_64)</li>
+  <li>Raspberry Pi OS (armhf)</li>
+  <li>Ubuntu Linux (amd64)</li>
+</ul>
+<h2 id="installation">Installation</h2>
+<p>
+  See the <a href="https://asciigames.neoman.dev/install">Install</a> section.
+</p>
+<h2 id="removal">Removal</h2>
+<p>
+  Removal of the package on Arch Linux based systems can be accomplished by
+  issuing the command:
+</p>
+<pre class="shell"><code>sudo pacman -Rs asciigames</code></pre>
+<p>
+  Removal of the package on Debian based systems can be accomplished by issuing
+  the command:
+</p>
+<pre class="shell"><code>sudo apt remove asciigames</code></pre>
+<p>
+  Removal of the package on RPM based systems can be accomplished by issuing the
+  command:
+</p>
+<pre class="shell"><code>sudo dnf remove asciigames</code></pre>
+<p>
+  On systems for which the manual installation was performed using the
+  <code>Install-bin.sh</code> script, remove Btop manually by downloading the
+  <code>Uninstall-bin.sh</code> script and, as a user with sudo privilege,
+  execute the commands:
+</p>
+<pre class="shell"><code>chmod 755 Uninstall-bin.sh
+    sudo ./Uninstall-bin.sh</code></pre>
+<h2 id="building-asciigames-from-source">Building asciigames from source</h2>
+<p>See the <a href="https://asciigames.neoman.dev/build">Build</a> section.</p>
+<h2 id="contributing">Contributing</h2>
+<p>
+  There are a variety of ways to contribute to the asciigames project. All forms
+  of contribution are appreciated and valuable. Also, it’s fun to collaborate.
+  Here are a few ways to contribute to the further improvement and evolution of
+  asciigames:
+</p>
+<h3 id="testing-and-issue-reporting">Testing and Issue Reporting</h3>
+<p>
+  asciigames is fairly complex with many components, features, options,
+  configurations, and use cases. Although currently only supported on Linux
+  platforms, there are a plethora of Linux platforms on which asciigames can be
+  deployed. Testing all of the above is time consuming and tedious. If you have
+  a Linux platform on which you can install asciigames and you have the time and
+  will to put it through its paces, then issue reports on problems you encounter
+  would greatly help improve the robustness and quality of asciigames. Open
+  issue reports at
+  <a href="https://github.com/doctorfree/asciigames/issues"
+    >https://github.com/doctorfree/asciigames/issues</a
+  >
+</p>
+<h3 id="sponsor-asciigames">Sponsor asciigames</h3>
+<p>
+  asciigames is completely free and open source software. All of the asciigames
+  components are freely licensed and may be copied, modified, and redistributed
+  freely. Nobody gets paid, nobody is making any money, it’s a project fully
+  motivated by curiousity and love of music. However, it does take some money to
+  procure development and testing resources. Right now asciigames needs a
+  multi-boot test platform to extend support to a wider variety of Linux
+  platforms and potentially Mac OS X.
+</p>
+<p>
+  If you have the means and you would like to sponsor asciigames development,
+  testing, platform support, and continued improvement then your monetary
+  support could play a very critical role. A little bit goes a long way in
+  asciigames. For example, a bootable USB SSD device could serve as a means of
+  porting and testing support for additional platforms. Or, a decent cup of
+  coffee could be the difference between a bug filled release and a glorious
+  musical adventure.
+</p>
+<p>
+  Sponsor the asciigames project at
+  <a href="https://github.com/sponsors/doctorfree"
+    >https://github.com/sponsors/doctorfree</a
+  >
+</p>
+<h3 id="contribute-to-development">Contribute to Development</h3>
+<p>
+  If you have programming skills and find the management and ease-of-use of
+  digital music libraries to be an interesting area, you can contribute to
+  asciigames development through the standard Github “fork, clone, pull request”
+  process. There are many guides to contributing to Github hosted open source
+  projects on the Internet. A good one is available at
+  <a href="https://www.dataschool.io/how-to-contribute-on-github/"
+    >https://www.dataschool.io/how-to-contribute-on-github/</a
+  >. Another short succinct guide is at
+  <a href="https://gist.github.com/MarcDiethelm/7303312"
+    >https://gist.github.com/MarcDiethelm/7303312</a
+  >.
+</p>
+<p>
+  Once you have forked and cloned the asciigames repository, it’s time to setup
+  a development environment. Although some of the asciigames commands are Bash
+  shell scripts, there are also applicatons written in C and C++ along with
+  documentation in Markdown format, configuration files in a variety of formats,
+  examples, screenshots, video demos, build scripts, packaging, and more.
+</p>
+<p>To compile <code>asciigames</code> from source, run the command:</p>
+<pre><code>./build</code></pre>
+<p>
+  On Debian (e.g. Ubuntu), PKGBUILD (e.g. Arch) and RPM (e.g. Fedora) based
+  systems the asciigames installation package can be created with the
+  <code>mkpkg</code> scripts. The <code>mkpkg</code> script determines which
+  platform it is on and executes the appropriate build and packaging script in
+  the <code>scripts/</code> directory. These scripts invoke the build scripts
+  for each of the projects included with asciigames, populate a distribution
+  tree, and call the respective packaging utilities. Packages are saved in the
+  <code>./releases/&lt;version&gt;/</code> folder. Once a package has been
+  created it can be installed with the <code>Install</code> script.
+</p>
+<p>Feel free to email me at github@ronrecord.com with questions or comments.</p>
+
 <p>Demo website</p>
 
 <div align="center">

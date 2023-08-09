@@ -1,8 +1,23 @@
 ---
 # the default layout is 'page'
 icon: fas fa-info-circle
-order: 10
+order: 6
 ---
+
+# Ascii Games
+
+The `asciigames` project provides several precompiled and prepackaged
+open source character based Ascii games. These can be installed as standalone
+packages on Linux and macOS or installed via the
+[Asciiville project](https://github.com/doctorfree/Asciiville#readme)
+initialization process.
+
+Games currently included in this project:
+
+- [2048](https://github.com/mevdschee/2048.c), Console version of the game "2048"
+- [Nethack](https://en.wikipedia.org/wiki/NetHack), ASCII text dungeon game
+- [Ninvaders](https://en.wikipedia.org/wiki/Space_Invaders), ASCII text version of Space Invaders
+- [Tetris](https://en.wikipedia.org/wiki/Tetris), ASCII text version of Tetris
 
 <div align="center">
   <h2 id="connect">Connect</h2>
