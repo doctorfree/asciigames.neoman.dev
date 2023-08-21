@@ -11,7 +11,7 @@ post_style: page
 Asciigames can be compiled, packaged, and installed from the source code
 repository. This should be done as a normal user with `sudo` privileges:
 
-```
+```shell
 # Retrieve the source code from the repository
 git clone https://github.com/doctorfree/asciigames.git
 # Enter the asciigames source directory
@@ -26,7 +26,7 @@ These steps are detailed below.
 
 ### Clone asciigames repository
 
-```
+```shell
 git clone https://github.com/doctorfree/asciigames.git
 cd asciigames
 ```
@@ -42,13 +42,13 @@ asciigames components have packaging dependencies on the following:
 
 On Debian based systems like Ubuntu Linux, install packaging dependencies via:
 
-```
+```shell
 sudo apt install dpkg
 ```
 
 On RPM based systems like Fedora Linux, install packaging dependencies via:
 
-```
+```shell
 sudo dnf install rpm-build rpm-devel rpmlint rpmdevtools
 ```
 
@@ -56,7 +56,7 @@ sudo dnf install rpm-build rpm-devel rpmlint rpmdevtools
 
 To build and package asciigames, execute the command:
 
-```
+```shell
 ./mkpkg
 ```
 
@@ -74,6 +74,6 @@ On PKGBUILD based systems like Arch Linux, the `mkpkg` scripts executes
 After successfully building and packaging asciigames with either
 `./mkpkg`, install the asciigames package with the command:
 
-```
+```shell
 ./Install
 ```

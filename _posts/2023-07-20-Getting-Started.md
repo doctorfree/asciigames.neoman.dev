@@ -7,5 +7,12 @@ pin: true
 img_path: "/posts/20230720"
 ---
 
-## Step One
+## Install
 
+See the [Install section](https://asciigames.neoman.dev/install)
+for details on getting started with package installation for your platform.
+
+## Build
+
+See the [Build section](https://asciigames.neoman.dev/build)
+for details on getting started from source.
