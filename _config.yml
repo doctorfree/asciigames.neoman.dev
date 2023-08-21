@@ -73,7 +73,7 @@ theme_mode:
 img_cdn:
 
 # the avatar on sidebar, support local or CORS resources
-avatar: "/assets/competence.png"
+avatar: "/assets/skills.png"
 
 # boolean type, the global switch for TOC in posts.
 toc: true
@@ -92,22 +92,7 @@ comments:
     repo: doctorfree/asciigames.neoman.dev
     repo_id: R_kgDOKFAAeA # The repository node id, find it with "gh api repos/${repo} | jq '.node_id'"
     category: General # The repo discussion category for comments, e.g. General
-    category_id:
-      DIC_kwDOKFAAeM4CYd5P
-      # This is the hardest thing to find. Use the following script:
-      # gh api graphql -f query='
-      # {
-      #   repository(owner: "<gh-username>", name: "<repo-name>") {
-      #     id
-      #     name
-      #     discussionCategories(first: 10) {
-      #       nodes {
-      #         id
-      #         name
-      #       }
-      #     }
-      #   }
-      # }'
+    category_id: DIC_kwDOKFAAeM4CYd5P
     mapping: # optional, default to 'pathname'
     input_position: # optional, default to 'bottom'
     lang: # optional, default to the value of `site.lang`
