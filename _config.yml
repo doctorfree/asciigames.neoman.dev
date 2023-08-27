@@ -26,7 +26,10 @@ description: >- # used by seo meta and the atom feed
   Precompiled and packaged open source character based Ascii games.
 
 # fill in the protocol & hostname for your site, e.g., 'https://username.github.io'
-url: ""
+url: "https://asciigames.neoman.dev"
+
+plugins:
+  - jekyll-sitemap
 
 github:
   username: doctorfree/asciigames # change to your github username
